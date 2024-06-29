@@ -1,5 +1,7 @@
-import '@/app/style/global.css'
-import { inter } from '@tutorial/ui/fonts'
+import '@/app/style/global.css';
+import '@radix-ui/themes/styles.css';
+import { Theme, ThemePanel } from '@radix-ui/themes';
+import { inter } from '@tutorial/ui/fonts';
 
 export default function RootLayout({
   children,
@@ -7,8 +9,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} antialiased`}>{children}</body>
+    <html lang='en'>
+      <body className={`${inter.className} antialiased`}>
+        <Theme>
+          {children}
+          <ThemePanel />
+        </Theme>
+      </body>
     </html>
   );
 }
