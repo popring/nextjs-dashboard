@@ -13,7 +13,7 @@ export default function RootLayout({
       <body className={`${inter.className} antialiased`}>
         <Theme>
           {children}
-          <ThemePanel />
+          <ThemePanel defaultOpen={false} />
         </Theme>
       </body>
     </html>
