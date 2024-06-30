@@ -1,10 +1,11 @@
-console.log('server')
+console.log('server');
+import { getData } from '../fetch/req';
 
 export default function Page() {
+  console.log('server Page');
+  getData().then((data) => {
+    console.log('data', data);
+  });
 
-  console.log('server Page')
-
-  return (
-    <button>button</button>
-  )
+  return <button>button</button>;
 }
