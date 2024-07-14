@@ -2,7 +2,7 @@ import '@/app/style/global.css';
 import '@radix-ui/themes/styles.css';
 import { Theme, ThemePanel } from '@radix-ui/themes';
 import { inter } from '@tutorial/ui/fonts';
-import { Toaster } from "@/components/ui/toaster"
+import { Toaster } from '@/components/ui/toaster';
 
 export default function RootLayout({
   children,
@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${inter.className} antialiased`}>
-        <Theme>
+        <Theme appearance='inherit'>
           {children}
           <Toaster />
           <ThemePanel defaultOpen={false} />
