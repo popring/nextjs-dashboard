@@ -75,7 +75,6 @@ export const metadata: Metadata = {
       url: '/apple-touch-icon-precomposed.png',
     },
   }, // icon 相关
-  themeColor: '#0070f3', // 浏览器地址栏颜色
   manifest: 'https://nextjs.org/manifest.json', // PWA
   twitter: {
     card: 'summary_large_image',
@@ -86,5 +85,4 @@ export const metadata: Metadata = {
     creatorId: '1467726470533754880',
     images: ['https://nextjs.org/og.png'],
   }, // Twitter
-  viewport: 'width=device-width, initial-scale=1.0', // 移动端
 };
