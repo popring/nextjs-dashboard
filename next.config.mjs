@@ -85,7 +85,8 @@ const nextConfig = {
   devIndicators: {
     buildActivity: true,
     buildActivityPosition: 'bottom-right'
-  }
+  },
+  poweredByHeader: false,
 };
 
 const withMDX = createMDX({
