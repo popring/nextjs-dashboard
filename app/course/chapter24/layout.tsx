@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Metadata } from 'next';
+import { Metadata, Route } from 'next';
 
 export default function Layout({ children }: any) {
   const link = [
@@ -15,7 +15,7 @@ export default function Layout({ children }: any) {
       href: '/course/chapter24/sub2',
       text: 'sub2',
     },
-  ];
+  ] satisfies { href: Route; text: string }[]
   return (
     <div className='flex flex-col  bg-orange-200 border-black border-2 border-solid'>
       <div className='mb-10 flex space-x-4'>

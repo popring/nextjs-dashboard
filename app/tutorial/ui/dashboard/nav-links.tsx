@@ -8,6 +8,7 @@ import {
 import Link from 'next/link'
 import {usePathname} from "next/navigation"
 import clsx from "clsx"
+import { Route } from 'next'
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
@@ -19,7 +20,7 @@ const links = [
     icon: DocumentDuplicateIcon,
   },
   { name: 'Customers', href: '/tutorial/dashboard/customers', icon: UserGroupIcon },
-];
+] satisfies { name: string; href: Route; icon: any }[]
 
 export default function NavLinks() {
   const pathname = usePathname()
